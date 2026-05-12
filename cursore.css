@@ -2,20 +2,20 @@
 /* CURSORE BASE */
 
 body {
-  cursor: url("gunn_1.png"), auto;
+  cursor: url("gunn_1.png") 16 16, auto;
 }
 
-/* CURSORE SU ELEMENTI INTERATTIVI */
+/* CURSORE INTERATTIVO */
 
 a,
 button,
 .menu,
-.model-viewer,
+model-viewer,
 .insta-link {
-  cursor: url("gunn_hover.png"), pointer;
+  cursor: url("gunn_hover.png") 16 16, pointer;
 }
 
-/* FALLBACK SICURO PER BROWSER */
+/* FALLBACK */
 
 a:hover,
 button:hover,
