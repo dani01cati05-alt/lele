@@ -12,7 +12,7 @@ button,
 .menu,
 .model-viewer,
 .insta-link {
-  cursor: url("gunn_hover.jpg"), pointer;
+  cursor: url("gunn_hover.png"), pointer;
 }
 
 /* FALLBACK SICURO PER BROWSER */
