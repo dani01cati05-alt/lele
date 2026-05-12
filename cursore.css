@@ -1,0 +1,24 @@
+
+/* CURSORE BASE */
+
+body {
+  cursor: url("gunn_1.png"), auto;
+}
+
+/* CURSORE SU ELEMENTI INTERATTIVI */
+
+a,
+button,
+.menu,
+.model-viewer,
+.insta-link {
+  cursor: url("gunn_hover.jpg"), pointer;
+}
+
+/* FALLBACK SICURO PER BROWSER */
+
+a:hover,
+button:hover,
+.menu:hover {
+  cursor: pointer;
+}
