@@ -1,24 +1,12 @@
 
-/* CURSORE BASE */
-
-body {
-  cursor: url("gunn_64.png") 16 16, auto;
+body,
+model-viewer {
+  cursor: url("gunn_1.png") 16 16, auto;
 }
-
-/* CURSORE INTERATTIVO */
 
 a,
 button,
 .menu,
-model-viewer,
 .insta-link {
-  cursor: url("gunn_hover.jpg"), pointer;
-}
-
-/* FALLBACK */
-
-a:hover,
-button:hover,
-.menu:hover {
   cursor: pointer;
 }
