@@ -11,7 +11,9 @@ a,
 button,
 .menu,
 model-viewer,
-
+.insta-link {
+  cursor: url("gunn_hover.jpg"), pointer;
+}
 
 /* FALLBACK */
 
