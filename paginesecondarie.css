@@ -17,11 +17,10 @@ body {
 
   font-family: Arial, sans-serif;
 
-  /* profondità 3D */
   perspective: 1000px;
 }
 
-/* LINK INSTAGRAM */
+/* INSTAGRAM */
 
 .insta-link {
   color: red;
@@ -82,28 +81,24 @@ model-viewer {
 
 .back-button img {
   width: 45px;
-
   height: auto;
 
   display: block;
 
-  animation: rotateXButton 6s linear infinite;
+  animation: rotateYButton 6s linear infinite;
 
-  transform-style: preserve-3d;
-
-  transition: opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* HOVER */
-
 .back-button img:hover {
   opacity: 0.8;
+  transform: scale(1.1);
 }
 
-/* ROTAZIONE ASSE X */
+/* ROTAZIONE ASSE Y (corretto) */
 
-@keyframes rotateXButton {
-
+@keyframes rotateYButton {
   from {
     transform: rotateY(0deg);
   }
@@ -111,5 +106,17 @@ model-viewer {
   to {
     transform: rotateY(360deg);
   }
+}
 
+/* 📱 MOBILE FIX */
+
+@media (max-width: 768px) {
+  .back-button {
+    top: 25px;
+    left: 25px;
+  }
+
+  .back-button img {
+    width: 35px;
+  }
 }
