@@ -72,8 +72,8 @@ model-viewer {
 .back-button {
   position: fixed;
 
-  top: 20px;
-  left: 20px;
+  top: 50px;
+  left: 50px;
 
   z-index: 999;
 }
