@@ -1,12 +1,27 @@
 
-body,
-model-viewer {
+/* CURSORE BASE */
+body {
   cursor: url("gunn_1.png") 16 16, auto;
 }
 
+/* TUTTO IL BOTTONE È CLICCABILE */
+.menu {
+  cursor: pointer;
+}
+
+/* FORZA CLICCABILITÀ INTERNA */
+.menu * {
+  cursor: pointer;
+}
+
+/* MODEL VIEWER NON ROMPE IL CURSORE */
+model-viewer {
+  cursor: pointer;
+}
+
+/* LINK ESTERNI */
 a,
 button,
-.menu,
 .insta-link {
   cursor: pointer;
 }
