@@ -1,26 +1,29 @@
 
- /* CURSORE BASE */
+/* CURSORE BASE */
 body {
   cursor: url("gunn_64.png") 16 16, auto;
 }
 
-/* CURSORE SU BOTTONE */
+/* ELEMENTI CLICCABILI (TUTTO) */
+a,
+button,
+.menu,
+.back-button,
+.insta-link {
+  cursor: url("gunn_hover_64.png") 16 16, pointer;
+}
+
+/* HOVER VISIVO MENU */
 .menu {
-  cursor: url("gunn_hover_64.png") 16 16, auto;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* CURSORE OVUNQUE DENTRO IL BOTTONE */
-.menu * {
-  cursor: inherit;
-}
-
-/* HOVER VISIVO DEL BOTTONE */
 .menu:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 30px rgba(255,255,255,0.15);
 }
 
-/* MODEL VIEWER NON ROMPE EVENTI */
+/* NON BLOCCARE INTERAZIONE MODEL VIEWER */
 model-viewer {
-  pointer-events: none;
+  cursor: url("gunn_64.png") 16 16, auto;
 }
