@@ -1,27 +1,29 @@
 
 /* CURSORE BASE */
 body {
-  cursor: url("gunn_1.png") 16 16, auto;
+  cursor: url("gunn_64.png") 16 16, auto;
 }
 
-/* TUTTO IL BOTTONE È CLICCABILE */
+/* BOTTONE INTERO CLICCABILE */
 .menu {
-  cursor: pointer;
+  cursor: url("gunn_64.png") 16 16, pointer;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* FORZA CLICCABILITÀ INTERNA */
+/* HOVER SULL'INTERA CARD */
+.menu:hover {
+  transform: scale(1.05);
+
+  box-shadow: 0 10px 30px rgba(255,255,255,0.15);
+}
+
+/* FORZA CURSORE OVUNQUE DENTRO */
 .menu * {
-  cursor: pointer;
+  cursor: inherit;
 }
 
-/* MODEL VIEWER NON ROMPE IL CURSORE */
+/* MODEL 3D NON ROMPE EVENTI */
 model-viewer {
-  cursor: pointer;
-}
-
-/* LINK ESTERNI */
-a,
-button,
-.insta-link {
-  cursor: pointer;
+  pointer-events: none; /* IMPORTANTISSIMO per stabilità hover */
 }
