@@ -1,1 +1,56 @@
-
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lele.matic — zine</title>
+  <!-- CSS ESTERNO -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cursore.css">
+  
+  <!-- LIBRERIA MODEL VIEWER -->
+  <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+</head>
+<body>
+  <div class="container">
+    <!-- MENU 1 -->
+    <a class="menu" href="pagina2.html">
+      <model-viewer
+        src="11real_rotante-v3.glb"
+        auto-rotate
+        rotation-per-second="40deg"
+        disable-zoom
+        shadow-intensity="1">
+      </model-viewer>
+      <!-- ICONA PNG -->
+      <img src="crackhead_titolo.png" class="menu-icon" alt="Icona 2">
+    </a>
+    <!-- MENU 2 -->
+    <a class="menu" href="pagina3.html">
+      <model-viewer
+        src="ufo-v1.glb"
+        auto-rotate
+        rotation-per-second="20deg"
+        disable-zoom
+        shadow-intensity="1">
+      </model-viewer>
+      <!-- ICONA PNG -->
+      <img src="flying_saucer.png" class="menu-icon" alt="UFO">
+    </a>
+    <!-- MENU 3 — nuovo bottone identico in stile -->
+    <a class="menu" href="pagina4.html">
+      <model-viewer
+        src="ufo-v1.glb"
+        auto-rotate
+        rotation-per-second="20deg"
+        disable-zoom
+        shadow-intensity="1">
+      </model-viewer>
+      <!-- ICONA PNG -->
+      <img src="flying_saucer.png" class="menu-icon" alt="Icona 4">
+    </a>
+  </div>
+</body>
+</html>
