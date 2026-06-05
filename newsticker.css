@@ -7,38 +7,39 @@
 
   background: #FF0618;
   overflow: hidden;
-  white-space: nowrap;
 
   z-index: 99999;
 
   display: flex;
   align-items: center;
 
-  backdrop-filter: blur(10px);
   box-shadow: 0 -2px 10px rgba(0,0,0,.25);
-
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
-/* contenitore che scorre */
+/* TRACK che scorre */
 .ticker-track {
   display: flex;
   width: max-content;
-  animation: scroll 15s linear infinite;
+  animation: ticker 18s linear infinite;
+  will-change: transform;
 }
 
-/* ogni blocco di testo */
+/* testo */
 .ticker-track span {
-  padding-right: 80px; /* spazio tra ripetizioni */
-  color: white;
-  font-weight: bold;
+  font-family: Futura, "Futura PT", Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fff;
+
+  padding-right: 80px;
+  white-space: nowrap;
 }
 
-/* animazione */
-@keyframes scroll {
+/* animazione tipo TV news ticker */
+@keyframes ticker {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-50%);
