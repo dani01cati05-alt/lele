@@ -1,10 +1,17 @@
 .news-ticker {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
+  height: 50px;
+
   background: #FF0618;
   overflow: hidden;
   white-space: nowrap;
-  padding: 12px 0;
-  position: relative;
+
+  z-index: 9999;
+  display: flex;
+  align-items: center;
 }
 
 .ticker-content {
@@ -12,7 +19,8 @@
   color: #fff;
   font-family: Arial, sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
+
   padding-left: 100%;
   animation: ticker 15s linear infinite;
 }
